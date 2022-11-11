@@ -3,6 +3,11 @@
     height: 18px;
     fill: var(--black-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .button-close:hover &,
+    .button-close:focus & {
+        fill: var(--color-accent);
+    }
 }
 
 .button-close {
@@ -18,9 +23,4 @@
     right: 8px;
     top: 8px;
     cursor: pointer;
-}
-
-.button-close:hover .button-close__icon,
-.button-close:focus .button-close__icon {
-    fill: var(--color-accent);
 }
